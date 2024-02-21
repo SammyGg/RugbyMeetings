@@ -3,12 +3,12 @@ from datetime import time
 
 # Create your models here.
 class Room(models.Model):
-    Name = models.CharField(max_length=200)
-    floor_number= models.IntegerField(default=0)
-    room_number= models.IntegerField(default=1)
+    name = models.CharField(max_length=200)
+    floor= models.IntegerField()
+    room_number= models.IntegerField()
     
     def __str__(self):
-        return f"{self.Name} at {self.room_number} on {self.floor_number}"
+        return f"{self.name} at {self.room_number} on {self.floor}"
     
 class Meeting(models.Model):
     title = models.CharField(max_length=200)
