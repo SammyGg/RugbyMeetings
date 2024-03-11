@@ -1,6 +1,6 @@
 from django.db import models
 from datetime import time
-
+s
 # Create your models here.
 class Room(models.Model):
     name = models.CharField(max_length=200)
