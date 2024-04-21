@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from datetime import datetime
 
 def welcome(request):
-    return HttpResponse("Welcome to Rugby fixtures")
+    return render(request,"webiste/welcome.html")
 def date(request):
     return HttpResponse("This page was served at "+ str(datetime.now()))
 def about(request):

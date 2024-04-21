@@ -24,4 +24,5 @@ urlpatterns = [
     path('', welcome),
     path('date', date),
     path('about', about),
+    path('about', welcome)
 ]
